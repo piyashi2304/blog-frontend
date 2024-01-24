@@ -6,7 +6,7 @@ function StoreCompo(props){
     useEffect(()=>{
       const fetchData=async() =>{
         try{
-          const response=await axios.get('https://blog-backend-vdrl.onrender.com')
+          const response=await axios.get('https://backend-blog-upp3.onrender.com/api/blog')
           setData(response.data)
         }
         catch(error){
